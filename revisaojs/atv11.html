@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function verificarbissexto(num1) {
+            var ano = parseInt(num1);
+            if (ano % 4 === 0 && (ano % 100 !== 0 || ano % 400 === 0)) {
+                alert("é bissexto");
+                return true;
+            } else {
+                alert("não é bissexto");
+                return false;
+            }}
+        var num1 = prompt("Digite um ano: ");
+        var verificado = verificarbissexto(num1);
+    </script>    
+</body>
+</html>
