@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>43</title>
+   
+</head>
+<body>
+    <script>
+        function resultado(objeto) {
+            for (chave in objeto) { //percorre o objeto e seus valores
+                alert(chave + objeto[chave]) //exibir as chaves do objeto
+            }
+        }
+        const Pessoa = {
+            Nome: ": Valentina",
+            Idade: 16,
+            Email: ": valentinacostaribeiro77@gmail.com",
+        }
+        resultado(Pessoa)
+    </script>
+</body>
+</html>
