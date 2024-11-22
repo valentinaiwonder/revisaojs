@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>38</title>
+   
 </head>
 <body>
     <script>
-        function concatenarElementos(array) {
-        return array.join('');
-        }
-        console.log(concatenarElementos(['a', 'b', 'c', 'd']));
+        var palavras = ['Maça ', 'Laranja ', 'Pera ']
+        function concatenar(lista) {
+            let resultado = ''
+            for (var i = 0; i < lista.length; i++) {
+                resultado += lista[i] //acessa pelo índice
+            }
+            return resultado
+        } 
+        var resultado = concatenar(palavras)
+        alert(resultado)        
     </script>
 </body>
 </html>
