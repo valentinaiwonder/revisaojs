@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>34</title>
+   
 </head>
 <body>
     <script>
-        function removerDuplicados(array) {
-            return [...new Set(array)];
+        var lista = [1,1,2,3,3,4,5,5]
+        for (let i = 0; i < lista.length; i++) { //acrescenta
+            for (let l = i + 1; l < lista.length; l++) {
+                if (lista[i] == lista[l]) {
+                    lista.splice(l, 1) //remover
+                    l-- //tira
+                }
             }
+        }
 
-        console.log(removerDuplicados([1, 2, 2, 3, 4, 4, 5])); 
-
+        alert(lista)
     </script>
 </body>
 </html>
