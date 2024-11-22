@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>35</title>
+   
 </head>
 <body>
     <script>
-        function unirArrays(array1, array2) {
-        return [...array1, ...array2];
+        a = [1,2,3]
+        b = [4,5,6]
+        c = []
+        function juntar(a, b, c) {
+            c.push(a)
+            c.push(b)
+            return(c)
         }
-
-        console.log(unirArrays([1, 2], [3, 4])); 
-
+        alert(juntar(a,b,c))
     </script>
 </body>
 </html>
