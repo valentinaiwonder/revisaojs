@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>36</title>
+   
 </head>
 <body>
     <script>
-        function encontrarIndice(array, valor) {
-        return array.indexOf(valor);
+        var frutas = ['Maçã', 'Laranja', 'Pera', 'Banana']
+        var procurar = 'Pera'
+        var indice = -1 // inicializa como -1 
+
+        for (let i = 0; i < frutas.length; i++) {
+            if (frutas[i] === procurar) {
+                indice = i 
+                break 
+            }
+        }
+        if (indice !== -1) {
+            alert("O índice de " + procurar + " é: " + indice)
+        } else {
+            alert(procurado + "não foi encontrado")
         }
 
-        console.log(encontrarIndice([1, 2, 3, 4], 3)); 
     </script>
 </body>
 </html>
