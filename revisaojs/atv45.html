@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>45</title>
+   
+</head>
+<body>
+    <script>
+        const pessoas = [
+            {
+                nome: "Ana", 
+                idade: 28  
+            },
+            {
+                nome: "Duda",
+                idade: 16
+            },
+            {
+                nome: "Maria",
+                idade: 40
+            }
+        ]
+        
+        
+        function calcular(pessoas) {
+            var somar = 0
+
+            console.log(pessoas)
+
+            for (posicao in pessoas) {
+                somar += pessoas[posicao].idade
+            }
+
+            return somar
+        }
+        
+        var soma = calcular(pessoas)
+        var media = soma / 3
+        alert("Média = " + media)
+    </script>
+</body>
+</html>
